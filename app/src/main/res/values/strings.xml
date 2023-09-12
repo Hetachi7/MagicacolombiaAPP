@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">trabajo1</string>
+    <string name="iniciosesion">LOGIN</string>
+    <string name="registro">SING IN</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">LOGIN</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="Title"> Registrate </string>
+    <string name="name">Nombre y Apellido</string>
+    <string name="Recuperar">¿Olvidaste tu contraseña?</string>
+    <string name="Crear">¿No tienes cuenta aun?</string>
+    <string name="ya_cuenta">¿Ya tienes cuenta?</string>
+</resources>
