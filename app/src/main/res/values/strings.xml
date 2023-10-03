@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">trabajo1</string>
+    <string name="app_name">La Magica Colombia</string>
     <string name="iniciosesion">LOGIN</string>
     <string name="registro">SING IN</string>
     <string name="prompt_email">Email</string>
@@ -15,4 +15,6 @@
     <string name="Recuperar">¿Olvidaste tu contraseña?</string>
     <string name="Crear">¿No tienes cuenta aun?</string>
     <string name="ya_cuenta">¿Ya tienes cuenta?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
