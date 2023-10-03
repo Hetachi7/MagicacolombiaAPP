@@ -15,13 +15,14 @@ package com.example.trabajo1
 
      override fun onCreate(savedInstanceState: Bundle?) {
          super.onCreate(savedInstanceState)
-         setContentView(R.layout.activity_main)
+         setContentView(R.layout.activity_home)
 
          drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
          val toolbar = findViewById<Toolbar>(R.id.toolbar)
          setSupportActionBar(toolbar)
 
-         val navigationView = findViewById<NavigationView>(R.id.nav_view) navigationview.setNavigationItemSelectedListener(this)
+         val navigationView = findViewById<NavigationView>(R.id.nav_view)
+         navigationView.setNavigationItemSelectedListener(this)
 
          val toggle = ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open_nav, R.string.close_nav)
 
