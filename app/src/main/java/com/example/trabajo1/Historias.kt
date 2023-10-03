@@ -10,6 +10,8 @@ class Historias : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_historias)
+
+
         val Historia1card = findViewById<CardView>(R.id.Historia1card)
         Historia1card.setOnClickListener {
             val intent = Intent(this@Historias, Historia1fragment::class.java)

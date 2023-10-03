@@ -26,6 +26,11 @@
             android:icon="@drawable/baseline_logout_24"
             android:title="Salir"
             />
+        <item
+            android:id="@+id/hitoriasm"
+            android:icon="@drawable/baseline_local_library_24"
+            android:title="Departamento"
+            />
     </group>
 
 </menu>
