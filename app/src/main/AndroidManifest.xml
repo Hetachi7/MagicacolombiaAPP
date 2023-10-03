@@ -5,7 +5,8 @@
     <activity
         android:name=".home"
         android:exported="true"
-        android:theme="@style/Theme.MainActivity">
+        android:theme="@style/Theme.MainActivity"
+        tools:ignore="WrongManifestParent">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 

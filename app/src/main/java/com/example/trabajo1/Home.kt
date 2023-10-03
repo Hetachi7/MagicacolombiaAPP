@@ -11,7 +11,8 @@ package com.example.trabajo1
  import androidx.drawerlayout.widget.DrawerLayout
  import com.google.android.material.navigation.NavigationView
 
- class Home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener { private lateinit var drawerLayout: DrawerLayout
+
+class Home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener { private lateinit var drawerLayout: DrawerLayout
 
      override fun onCreate(savedInstanceState: Bundle?) {
          super.onCreate(savedInstanceState)
