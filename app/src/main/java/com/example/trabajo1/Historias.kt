@@ -4,57 +4,95 @@ import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
 import android.view.View
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import androidx.fragment.app.Fragment
+
 class Historias : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_historias)
 
-
-        val Historia1card = findViewById<CardView>(R.id.Historia1card)
-        Historia1card.setOnClickListener {
-            val intent = Intent(this@Historias, Historia1fragment::class.java)
-            startActivity(intent)
-        }
-       /* val Historia2card = findViewById<CardView>(R.id.Historia2.
-
-
-
-
-        card)
-        Historia2card.setOnClickListener {
-            val intent2 = Intent(this@Historias, Historia2fragment::class.java)
-            startActivity(intent2)
-        }*/
-        val Historia3card = findViewById<CardView>(R.id.Historia3card)
-        Historia3card.setOnClickListener {
-            val intent3 = Intent(this@Historias, Historia3fragment::class.java)
-            startActivity(intent3)
-        }
-        val Historia4card = findViewById<CardView>(R.id.Historia4card)
-        Historia4card.setOnClickListener {
-            val intent4 = Intent(this@Historias, Historia4fragment::class.java)
-            startActivity(intent4)
-        }
-        val Historia5card = findViewById<CardView>(R.id.Historia5card)
-        Historia5card.setOnClickListener {
-            val intent5 = Intent(this@Historias, Historia5fragment::class.java)
-            startActivity(intent5)
-        }
-        /*val Historia6card = findViewById<CardView>(R.id.Historia6card)
-        Historia6card.setOnClickListener {
-            val intent6 = Intent(this@Historias, Historia6fragment::class.java)
-            startActivity(intent6)
+         /* @Override
+        public boolean onCreateOptionsMenu(Menu menu) {
+            getMenuInflater().inflate(R.menu.nav_menu, menu);
+            return true;
         }*/
 
-        val Historia6Card = findViewById<CardView>(R.id.Historia6card)
-        Historia6Card.setOnClickListener( object : View.OnClickListener{
-            override fun onClick(v: View?) {
-                supportFragmentManager.beginTransaction().replace(R.id.Historia6card,Historia6fragment()).commit()
+
+        val CardOpen: CardView = findViewById(R.id.Historia1card)
+        CardOpen.setOnClickListener{
+            val  myfragment1 = Historia1fragment()
+            val fragment:Fragment? =
+                supportFragmentManager.findFragmentByTag(Historia1fragment::class.java.simpleName)
+            if ( fragment !is Historia1fragment){
+                supportFragmentManager.beginTransaction()
+                    .add(R.id.fragment_container,myfragment1,Historia1fragment :: class.java.simpleName)
+                    .commit()
             }
-        })
+        }
+        val CardOpen2: CardView = findViewById(R.id.Historia2card)
+        CardOpen2.setOnClickListener{
+            val  myfragment2 = Historia2fragment()
+            val fragment:Fragment? =
+                supportFragmentManager.findFragmentByTag(Historia2fragment::class.java.simpleName)
+            if ( fragment !is Historia2fragment){
+                supportFragmentManager.beginTransaction()
+                    .add(R.id.fragment_container,myfragment2,Historia2fragment :: class.java.simpleName)
+                    .commit()
+            }
+        }
+        val CardOpen3: CardView = findViewById(R.id.Historia3card)
+        CardOpen3.setOnClickListener{
+            val  myfragment3 = Historia3fragment()
+            val fragment:Fragment? =
+                supportFragmentManager.findFragmentByTag(Historia3fragment::class.java.simpleName)
+            if ( fragment !is Historia3fragment){
+                supportFragmentManager.beginTransaction()
+                    .add(R.id.fragment_container,myfragment3,Historia3fragment :: class.java.simpleName)
+                    .commit()
+            }
+        }
+        val CardOpen4: CardView = findViewById(R.id.Historia4card)
+        CardOpen4.setOnClickListener{
+            val  myfragment4 = Historia4fragment()
+            val fragment:Fragment? =
+                supportFragmentManager.findFragmentByTag(Historia4fragment::class.java.simpleName)
+            if ( fragment !is Historia4fragment){
+                supportFragmentManager.beginTransaction()
+                    .add(R.id.fragment_container,myfragment4,Historia4fragment :: class.java.simpleName)
+                    .commit()
+            }
+        }
+
+        val CardOpen5: CardView = findViewById(R.id.Historia5card)
+        CardOpen5.setOnClickListener{
+            val  myfragment5 = Historia5fragment()
+            val fragment:Fragment? =
+                supportFragmentManager.findFragmentByTag(Historia5fragment::class.java.simpleName)
+            if ( fragment !is Historia5fragment){
+                supportFragmentManager.beginTransaction()
+                    .add(R.id.fragment_container,myfragment5,Historia5fragment :: class.java.simpleName)
+                    .commit()
+            }
+        }
+        val CardOpen6: CardView = findViewById(R.id.Historia6card)
+        CardOpen6.setOnClickListener{
+            val  myfragment6 = Historia6fragment()
+            val fragment:Fragment? =
+                supportFragmentManager.findFragmentByTag(Historia6fragment::class.java.simpleName)
+            if ( fragment !is Historia6fragment){
+                supportFragmentManager.beginTransaction()
+                    .add(R.id.fragment_container,myfragment6,Historia6fragment :: class.java.simpleName)
+                    .commit()
+            }
+        }
+
+
     }
+
 }

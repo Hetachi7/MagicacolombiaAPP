@@ -55,23 +55,23 @@
 
     <TextView
         android:id="@+id/Recuperar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="157dp"
+        android:layout_height="15dp"
+        android:gravity="center"
         android:text="@string/Recuperar"
         android:textColor="#B10101"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="482dp" />
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="487dp" />
 
     <TextView
         android:id="@+id/Crear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="204dp"
         android:text="@string/Crear"
         android:textColor="#B10101"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="482dp" />
+        app:layout_constraintStart_toStartOf="@+id/Recuperar"
+        tools:layout_editor_absoluteY="483dp" />
 
     <Button
         android:id="@+id/login2"
@@ -82,12 +82,13 @@
         android:layout_marginBottom="64dp"
         android:backgroundTint="#B10101"
         android:text="@string/iniciosesion"
+
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.636" />
 
     <ImageView
         android:id="@+id/imageView3"

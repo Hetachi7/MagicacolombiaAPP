@@ -11,8 +11,10 @@ package com.example.trabajo1
  import androidx.appcompat.app.ActionBarDrawerToggle
  import androidx.appcompat.app.AppCompatActivity
  import androidx.appcompat.widget.Toolbar
+ import androidx.cardview.widget.CardView
  import androidx.core.view.GravityCompat
  import androidx.drawerlayout.widget.DrawerLayout
+ import androidx.fragment.app.Fragment
  import com.google.android.material.navigation.NavigationView
 
 
@@ -22,6 +24,30 @@ class Home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
      override fun onCreate(savedInstanceState: Bundle?) {
          super.onCreate(savedInstanceState)
          setContentView(R.layout.activity_home)
+
+        /* val Buttonopen: Button = findViewById(R.id.edit)
+         Buttonopen.setOnClickListener{
+             val  myfragment = Perfilfragment()
+             val fragment: Fragment? =
+                 supportFragmentManager.findFragmentByTag(Perfilfragment::class.java.simpleName)
+             if ( fragment !is Perfilfragment){
+                 supportFragmentManager.beginTransaction()
+                     .add(R.id.fragment_container,myfragment,Perfilfragment :: class.java.simpleName)
+                     .commit()
+             }
+         }*/
+         /*val fragmentManager =  childFragmentManager // Usa childFragmentManager para fragmentos anidados
+         val fragmentTransaction = fragmentManager.beginTransaction()
+
+                // Reemplazar el contenido del contenedor con FragmentB
+         val fragmentB = Perfilfragment()
+         fragmentTransaction.replace(R.id.fragment_container,Editfragment)
+
+                // Puedes agregar la transacción a la pila para permitir la navegación hacia atrás (opcional)
+         fragmentTransaction.addToBackStack(null)
+
+                // Realiza la transacción
+         fragmentTransaction.commit()*/
 
          drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
          val toolbar = findViewById<Toolbar>(R.id.toolbar)
