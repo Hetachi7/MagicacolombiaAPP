@@ -46,6 +46,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="16dp"
             app:layout_constraintStart_toEndOf="@id/Logoname"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_container2"/>
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="175dp"

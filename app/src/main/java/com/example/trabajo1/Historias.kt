@@ -31,8 +31,9 @@ class Historias : AppCompatActivity() {
                 supportFragmentManager.findFragmentByTag(Historia1fragment::class.java.simpleName)
             if ( fragment !is Historia1fragment){
                 supportFragmentManager.beginTransaction()
-                    .add(R.id.fragment_container,myfragment1,Historia1fragment :: class.java.simpleName)
+                    .add(R.id.fragment_container2,myfragment1,Historia1fragment :: class.java.simpleName)
                     .commit()
+
             }
         }
         val CardOpen2: CardView = findViewById(R.id.Historia2card)
