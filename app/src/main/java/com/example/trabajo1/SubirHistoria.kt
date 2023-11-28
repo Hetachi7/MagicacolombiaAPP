@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
@@ -13,12 +14,14 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 
-class Recuperar : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener { private lateinit var drawerLayout: DrawerLayout
-
+class SubirHistoria : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener { private lateinit var drawerLayout: DrawerLayout
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_recuperar)
+        setContentView(R.layout.activity_subir_historia)
+        val Subirbtn= findViewById <Button>(R.id.subirH)
+
+        Subirbtn.setOnClickListener(viewListener2)
 
         drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
@@ -41,7 +44,6 @@ class Recuperar : AppCompatActivity(), NavigationView.OnNavigationItemSelectedLi
             navigationView.setCheckedItem(R.id.home)
         }
     }
-
     fun enivarhistorias(){
         val intent: Intent = Intent( this,Historias::class.java)
         startActivity(intent)
@@ -88,6 +90,17 @@ class Recuperar : AppCompatActivity(), NavigationView.OnNavigationItemSelectedLi
             drawerLayout.closeDrawer(GravityCompat.START)
         } else {
             onBackPressedDispatcher.onBackPressed()
+        }
+    }
+    fun enviarSubir(){
+        val intent: Intent = Intent(this,Home::class.java)
+        startActivity(intent)
+    }
+
+    private val viewListener2 = View.OnClickListener {
+        when(it.id){
+            R.id.subirH-> enviarSubir()
+
         }
     }
 }

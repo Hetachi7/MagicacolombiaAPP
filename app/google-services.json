@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "26126539270",
+    "project_id": "intento-ae48f",
+    "storage_bucket": "intento-ae48f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26126539270:android:dd84775b391b63539fc187",
+        "android_client_info": {
+          "package_name": "com.example.trabajo1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxa24u5fSfSja_R_VwjnT2ZE4ITkPwIjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

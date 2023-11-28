@@ -14,7 +14,6 @@
         android:layout_height="170dp"
         app:srcCompat="@drawable/bienvenido"
         tools:ignore="ContentDescription,MissingConstraints"
-
         tools:layout_editor_absoluteX="-10dp"
         tools:layout_editor_absoluteY="160dp" />
 
@@ -23,8 +22,8 @@
         android:layout_width="116dp"
         android:layout_height="57dp"
         android:layout_marginEnd="52dp"
-        android:backgroundTint="#B10101"
         android:text="@string/iniciosesion"
+        android:backgroundTint="#8B0000"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +36,7 @@
         android:layout_width="116dp"
         android:layout_height="57dp"
         android:layout_marginEnd="252dp"
-        android:backgroundTint="#B10101"
+        android:backgroundTint="#8B0000"
         android:text="@string/registro"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -75,10 +75,20 @@ class Home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
         val intent: Intent = Intent( this,Historias::class.java)
         startActivity(intent)
     }
+    fun enviarsubir(){
+        val intent: Intent = Intent(this,SubirHistoria::class.java)
+        startActivity(intent)
+    }
+    fun enviarreport(){
+        val intent: Intent = Intent( this,ReportarError::class.java)
+        startActivity(intent)
+    }
 
     private val viewListener = View.OnClickListener{
         when(it.id){
             R.id.hitoriasm->enivarhistorias()
+            R.id.Subir->enviarsubir()
+            R.id.message->enviarreport()
         }
     }
 
@@ -86,7 +96,6 @@ class Home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
      override fun onNavigationItemSelected(item: MenuItem): Boolean {
          when (item.itemId) {
          R.id.home-> supportFragmentManager.beginTransaction() .replace(R.id.fragment_container, Homefragment()).commit()
-         R.id.message -> supportFragmentManager.beginTransaction() .replace(R.id.fragment_container, Messagefragment()).commit()
          R.id.perfil -> supportFragmentManager.beginTransaction() .replace(R.id.fragment_container, Perfilfragment()).commit()
          R.id.salir -> Toast.makeText(this, "Logout!", Toast.LENGTH_SHORT).show()
              R.id.hitoriasm->{

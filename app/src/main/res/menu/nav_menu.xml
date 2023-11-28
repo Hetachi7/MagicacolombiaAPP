@@ -17,19 +17,27 @@
 
             />
         <item
-            android:id="@+id/message"
-            android:icon="@drawable/baseline_message_24"
-            android:title="Message"
+            android:id="@+id/hitoriasm"
+            android:icon="@drawable/baseline_local_library_24"
+            android:title="Historias"
             />
+        <item
+            android:id="@+id/Subir"
+            android:icon="@drawable/baseline_add_circle_outline_24"
+            android:title="Sube tu historia"
+            />
+    </group>
+
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/message"
+        android:icon="@drawable/baseline_message_24"
+        android:title="Reportar Error"
+        />
         <item
             android:id="@+id/salir"
             android:icon="@drawable/baseline_logout_24"
             android:title="Salir"
-            />
-        <item
-            android:id="@+id/hitoriasm"
-            android:icon="@drawable/baseline_local_library_24"
-            android:title="Departamento"
             />
     </group>
 
